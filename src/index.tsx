@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import { render } from 'react-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const root = document.getElementById('root')
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+if(!root) {
+  throw new Error("Oups, il n'y a pas d'élément #root")
+}
+
+const presentation = (name:string, age:number) => 
+  (<h1>
+  <strong>Bonjour {name} !</strong>
+  <br/>Vous avez {age} ans
+  </h1>
+  )
+
+const Hello = () => <p>Bonjour :)</p>
+
+const name: string = 'Alex'
+const age: number = 28
+
+render(
+  <div id="test" className="my-class">
+    {presentation(name, age)}
+    <Hello />
+  </div>, root
+)
+
