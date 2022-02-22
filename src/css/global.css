@@ -1,0 +1,26 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    --black:#111;
+    --black-bg:#222;
+    --dark-grey:#333;
+    --light-grey:#999;
+    --white:#fff;
+}
+
+#root {
+    padding: 3rem 3.5rem;
+}
+
+body {
+    background: var(--black-bg);
+    color:var(--white);
+}
