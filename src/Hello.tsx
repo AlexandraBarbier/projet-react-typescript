@@ -7,7 +7,8 @@ type HelloProps = {
 }
 
 const YellowParagraph = styled.p`
-  font-size: 4.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
 `
 
 export default function Hello(props: HelloProps): ReactElement {

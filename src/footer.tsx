@@ -6,7 +6,7 @@ import BottomNav from './BottomNav'
 const FooterBottom = styled.footer`
   width: 100%;
   min-height: 10vh;
-  background: var(--white);
+  background: var(--black-opacity);
   position: fixed;
   bottom: 0;
   left: 0;
