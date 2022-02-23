@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 import './css/global.css'
+import CategoriesName from './CategoriesName'
+import BigText from './BigTitle'
 
 const MainSections = styled.section`
   margin: 3rem 1.2rem;
@@ -54,7 +56,7 @@ const InfosH2 = styled.h2`
 export default function LastActivities(): ReactElement {
   return (
     <MainSections>
-      <h2>Votre activité récente</h2>
+      <BigText>Votre activité récente</BigText>
       <PopSection>
         <PopContainer>
           <Image

@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 import './css/global.css'
+import BigText from './BigTitle'
 
 const MainSections = styled.section`
   margin: 3rem 1.2rem;
@@ -54,7 +55,7 @@ const InfosH2 = styled.h2`
 export default function Popular(): ReactElement {
   return (
     <MainSections>
-      <h2>Populaire en ce moment</h2>
+      <BigText>Populaire en ce moment</BigText>
       <PopSection>
         <PopContainer>
           <Image

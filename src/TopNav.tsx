@@ -32,7 +32,7 @@ const IconsContainer = styled.div`
 export default function TopNav(): ReactElement {
   return (
     <NavContainer>
-      <Hello name="Alex"></Hello>
+      <Hello name="Alex" age={28}></Hello>
       <IconsContainer>
         <FontAwesomeIcon className="icons" icon={faBell} />
         <FontAwesomeIcon className="icons" icon={faCog} />
