@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
-import Header from './header'
-import Footer from './footer'
+import Header from './Header'
+import Footer from './Footer'
 import Hero from './Hero'
 import './css/global.css'
 import SearchBar from './SearchBar'
